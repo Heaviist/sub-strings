@@ -12,4 +12,6 @@ Use array methods to iterate over an array and find matches. This should eventua
 - check back in earlier lessons for techniques to achieve this result
 
 # Results and Evaluation
-To be added later
+- order of chaining was a bit of a puzzle as expected. With the rubocop suggestion to change to each_wuth_object, the whole method become more clear and easier to finalize.
+- unexpected struggle to make sure there was any output. Ended up having to use a variable = text.each_with_object.. to be able to return the result of the operations.
+- overall an interesting piece of surprisingly short code.

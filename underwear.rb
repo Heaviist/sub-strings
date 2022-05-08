@@ -20,6 +20,7 @@ substrings(sub_sentence, dictionary)
 # expected outcome
 # { "below" => 1, "low" => 1 }
 
+# old version for single word inputs
 # def substrings(text, dict)
 #   #text = text.split(" ")
 #   p text
