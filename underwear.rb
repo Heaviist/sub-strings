@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 def substrings(text, dict)
-  text = text.downcase.split(' ')
-  count_list = text.each_with_object(Hash.new(0)) do |word, output|
-    dict.each { |entry| output[entry] += 1 if word.include?(entry) }
+  text = text.downcase.split(' ') # split to make sure sentences/multiple words can be taken in
+  count_list = text.each_with_object(Hash.new(0)) do |word, output| # make variable to be able to present output at end of method | Take text and do for each word while creating a new hash. This hash can be used by second term, output
+    dict.each { |entry| output[entry] += 1 if word.include?(entry) } # check every word from text against the dictionary. If word includes entry from dict, then add to output hash
   end
   p count_list
 end
